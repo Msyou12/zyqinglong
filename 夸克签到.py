@@ -30,7 +30,7 @@ def get_env():
     # 判断 QUARK_COOKIE是否存在于环境变量 
     if "QUARK_COOKIE" in os.environ: 
         # 读取系统变量以 \n 或 && 分割变量 
-        cookie_list = re.split('\n|&&', os.environ.get('QUARK_COOKIE')) 
+        cookie_list = re.split('\n|&&', os.environ.get('__pus=aad01bdb05284b1a3e87857fa90883f6AAQcJmfO0JegcqGAARkf350uuLImMD+eyP9jexErFwpIYObeOoQDp78Hoz2Cs1ob4aFF4A/aF4lNon2J4siqrO8q;')) 
         # 过滤空字符串
         cookie_list = [cookie for cookie in cookie_list if cookie.strip()]
     else: 
